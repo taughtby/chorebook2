@@ -1,6 +1,9 @@
 class TasksController < ApplicationController
+  
+  before_filter :authenticate_user!
+  
+  
   def index
-    sleep 1
     @incomplete_tasks = Task.where(complete: false)
     @complete_tasks = Task.where(complete: true)
   end
