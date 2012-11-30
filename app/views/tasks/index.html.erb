@@ -1,13 +1,17 @@
-<h1>Check List</h1>
 
-<%= link_to "+ Chore", new_task_path, id: "new_link" %>
+	<div class="hero-unit">
+		<h1>Check List</h1>
 
-
-<div class="tasks" id="incomplete_tasks">
-  <%= render @incomplete_tasks %>
-</div>
+		<%= link_to "+ Chore", new_task_path, id: "new_link" %>
 
 
-<div class="tasks" id="complete_tasks">
-  <%= render @complete_tasks %>
-</div>
+		<div class="tasks" id="incomplete_tasks">
+		  <%= render @incomplete_tasks %>
+		</div>
+
+
+		<div class="tasks" id="complete_tasks">
+		  <%= render @complete_tasks %>
+		</div>
+	</div>
+

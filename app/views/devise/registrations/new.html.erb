@@ -1,0 +1,31 @@
+<div id="box_sign">
+    <div class="container">
+        <div class="span12 box_wrapper">
+            <div class="span12 box">
+                <div>
+                    <div class="head">
+                        <h4>Create your account</h4>
+                    </div>
+                    <div class="form">
+                        <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+										  <%= f.error_notification %>
+
+
+										    <%= f.input :email, :required => true, :autofocus => true, label: false, placeholder: 'email...' %>
+										    <%= f.input :password, :required => true, label: false, placeholder: 'password...' %>
+										    <%= f.input :password_confirmation, :required => true, label: false, placeholder: 'password Confirm...' %>
+
+										    <%= f.button :submit, "Sign up", class: "btn" %>
+
+										<% end %>
+
+										
+                    </div>
+                </div>
+            </div>
+            <p class="already">Already have an account? 
+                <%= link_to "Sign In", new_user_session_path %>
+        </div>
+    </div>
+</div>
+

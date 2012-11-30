@@ -1,4 +1,6 @@
 Checklist::Application.routes.draw do
+  get "splash/home"
+
   devise_for :users
 
   resources :children

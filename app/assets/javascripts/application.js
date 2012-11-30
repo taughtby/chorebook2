@@ -11,6 +11,8 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require theme
+
 //= require jquery_ujs
 //= require jquery.ui.datepicker
 //= require_tree .
