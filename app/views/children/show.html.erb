@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @child.name %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= image_tag @child.image_url(:thumb) %>
+</p>
+
+<p>
+  <b>Total points:</b>
+  <%= @child.total_points %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @child.date_of_birth %>
+</p>
+
+
+<%= link_to 'Edit', edit_child_path(@child) %> |
+<%= link_to 'Back', children_path %>

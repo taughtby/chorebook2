@@ -1,0 +1,6 @@
+<%= form_for @task do |f| %>
+  <%= f.text_field :name, placeholder: 'Describe chore' %>
+  <%= f.number_field :points, placeholder: 'points' %>
+  <%= f.text_field :due_date, placeholder: 'Due date' %>
+  <%= f.submit %>
+<% end %>

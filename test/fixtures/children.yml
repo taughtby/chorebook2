@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  image: MyString
+  total_points: 1
+  date_of_birth: 2012-11-30
+
+two:
+  name: MyString
+  image: MyString
+  total_points: 1
+  date_of_birth: 2012-11-30
