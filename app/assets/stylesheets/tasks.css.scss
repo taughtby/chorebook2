@@ -7,6 +7,16 @@ h2 {
 
 
 
+
+.tasks .admin {
+	display: none;
+}
+
+.tasks.hover .admin {
+	display: inline;
+}
+
+
 .edit_task {
   a {
     color: #999;

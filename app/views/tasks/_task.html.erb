@@ -1,8 +1,17 @@
 <%= form_for task do |f| %>
   <%= f.check_box :complete %>
   <%= f.submit "Update" %>
-  <%= f.label :complete, task.name %>
-  <%= f.label :complete, task.points %>
+  <%= f.label :complete, task.points %> pts,
+   Jonjo
+  <%= f.label :complete, task.name %>,
+  
+  
   <%= f.label :complete, task.due_date.strftime("due: %A")  %>
-  <%= link_to "(remove)", task, method: :delete, data: {confirm: "Are you sure?"} %>
+  <span class="admin"><%= link_to (image_tag "1354332059_delete.png"), task, method: :delete, data: {confirm: "Are you sure?"} %>
+<%= link_to time_ago_in_words(task.created_at) + " ago", task %></span>
+
 <% end %>
+
+
+
+

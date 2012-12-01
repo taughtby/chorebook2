@@ -12,7 +12,7 @@
 	  	  <div class="nav-collapse collapse">
               <ul class="nav pull-right">
 	              <% if user_signed_in? %>
-								  <strong><%= link_to current_user.email, edit_user_registration_path   %></strong>.
+								  <strong><%= link_to current_user.email, edit_user_registration_path   %></strong> |
 								  <%= link_to "Logout", destroy_user_session_path, method: :delete %>
 								<% else %>
 
@@ -20,7 +20,7 @@
 								  <li><a href="#" class="scroller" data-section="#pricing">About</a></li>
 								  <li><a href="#" class="scroller" data-section="footer">Contact us</a></li>
 
-								  <li><%= link_to 'Sign Up', new_user_registration_path, class: "btn-header	" %></li>
+								  <li><%= link_to 'Sign Up', new_user_registration_path, class: "btn-header	" %></li> 
 								  <li><%= link_to 'Sign In', new_user_session_path, class: "btn-header" %></li>
 								<% end %>
                   
