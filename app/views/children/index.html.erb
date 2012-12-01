@@ -3,17 +3,18 @@
 
 
 <% @children.each do |child| %>
-  <tr>
-    <td><%= child.name %></td>
-    <td><%= image_tag child.image_url(:thumb) %></td>
-    <td><%= child.total_points %></td>
-    <td><%= child.date_of_birth %></td>
-    <td><%= link_to 'Show', child %></td>
-    <td><%= link_to 'Edit', edit_child_path(child) %></td>
-    <td><%= link_to 'Destroy', child, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+
+    
+   <div class="well"> <%= image_tag child.image_url(:thumb) %>
+    <%= child.name %>
+    <%= child.total_points %>
+    <%= child.date_of_birth %>
+    <%= link_to 'Show', child %>
+    <%= link_to 'Edit', edit_child_path(child) %>
+    <%= link_to 'Destroy', child, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
 <% end %>
-</table>
+
 
 <br />
 

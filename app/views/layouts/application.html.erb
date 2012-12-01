@@ -12,9 +12,26 @@
 <%= render 'layouts/navbar' %>
 		
 <div class="container">
-	    
-       
-	<%= yield %>     
+	 
+		<div class="topshit">
+			<div class="centre-nav">	
+				<%= link_to "Chore", "#",class: "4fs" %>
+				<%= link_to "Chore", "#",class: "4fs" %>
+				<%= link_to "Chore", "#",class: "4fs" %>
+				<div class="download_btn"><%= image_tag 'web-buttons.png' %></div>
+				<div class="download_btn"><%= image_tag 'web-buttons.png' %></div>
+				<div class="download_btn"><%= image_tag 'web-buttons.png' %></div>
+			
+			</div>
+						
+					
+			
+		
+    </div>
+    <div class="bottomshit">
+    	<%= yield %> 
+    </div>   
+   
     
 </div>	
      

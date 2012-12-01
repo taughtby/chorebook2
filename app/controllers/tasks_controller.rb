@@ -4,7 +4,7 @@ class TasksController < ApplicationController
   
   
   def index
-    @incomplete_tasks = Task.where(complete: false)
+    @incomplete_tasks = Task.where(complete: false).order(:due_date)
     @complete_tasks = Task.where(complete: true)
   end
 
@@ -27,4 +27,7 @@ class TasksController < ApplicationController
     @task = Task.destroy(params[:id])
     redirect_to tasks_url
   end
+  
+  
+  
 end

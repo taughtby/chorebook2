@@ -3,6 +3,6 @@
   <%= f.submit "Update" %>
   <%= f.label :complete, task.name %>
   <%= f.label :complete, task.points %>
-  <%= f.label :complete, task.due_date %>
+  <%= f.label :complete, task.due_date.strftime("due: %A")  %>
   <%= link_to "(remove)", task, method: :delete, data: {confirm: "Are you sure?"} %>
 <% end %>

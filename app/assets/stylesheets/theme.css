@@ -7,6 +7,7 @@ body {
 	background: #DDDCE2 url('content_bg.jpg') repeat left top;
 	-webkit-font-smoothing: antialiased;
 }
+
 .scrolltop {
 	background-color: #F1F1F1;
 	border: 1px solid darkGray;

@@ -4,16 +4,7 @@ h2 {
 }
 
 
-#incomplete_tasks form {
-  margin: 5px 0;
-}
 
-#complete_tasks form {
-  font-size: 12px;
-  color: #777;
-  margin: 3px 0;
-  label { text-decoration: line-through; }
-}
 
 
 .edit_task {
@@ -26,6 +17,7 @@ h2 {
 }
 
 .hero-unit {
+	margin-top: 20px;
 	background: #fff;
 	border: 1px solid #ddd;
 	-webkit-border-radius: 15px;
@@ -52,7 +44,7 @@ h2 {
   margin-top: 20px;
 }
 
-#incomplete_chores form {
+#incomplete_tasks form {
 
   margin: 0px 0;
    &:hover { background: #F0F7FC; }
@@ -61,7 +53,7 @@ h2 {
 
 }
 
-#complete_chores form {
+#complete_tasks form {
 	margin: 10px 0;
   font-size: 14px;
   color: #ccc;
